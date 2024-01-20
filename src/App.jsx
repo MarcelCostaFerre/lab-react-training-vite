@@ -36,26 +36,32 @@ function App() {
       <h2>Iteration 2 | Component: Greetings</h2>
       <div>
         <Greetings lang="de">Ludwig</Greetings>
+        <br />
         <Greetings lang="fr">François</Greetings>
+        <br />
         <Greetings lang="en">English</Greetings>
+        <br />
         <Greetings lang="es">Spanish</Greetings>
       </div>
       <br />
       <h2>Iteration 3 | Component: Random</h2>
       <div>
         <Random min={1} max={6} />
+        <br />
         <Random min={1} max={100} />
       </div>
       <br />
       <h2>Iteration 4 | Component: BoxColor</h2>
       <div>
         <BoxColor r={255} g={0} b={0} />
+        <br />
         <BoxColor r={128} g={255} b={0} />
+        <br />
         <BoxColor r={-520} g={2550} b={181} />
       </div>
       <br />
       <h2>Iteration 5 | Component: CreditCard</h2>
-      <div>
+      <div className="flex">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -93,15 +99,10 @@ function App() {
       <h2>Iteration 6 | Component: Rating</h2>
       <div>
         <Rating>0</Rating>
-        <br />
         <Rating>1.49</Rating>
-        <br />
         <Rating>1.5</Rating>
-        <br />
         <Rating>3</Rating>
-        <br />
         <Rating>4</Rating>
-        <br />
         <Rating>5</Rating>
       </div>
       <br />

@@ -13,8 +13,8 @@ function Greetings (props) {
         }
     }
     return (
-        <div>
-            <p>{lang()} {props.children}</p>
+        <div className="id-card">
+            <p className="p-greetings">{lang()} {props.children}</p>
         </div>
     );
 }

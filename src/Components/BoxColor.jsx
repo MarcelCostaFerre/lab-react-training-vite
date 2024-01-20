@@ -1,15 +1,15 @@
 function BoxColor (props) {
 
-    function r (min, max, value) {
+    function rgbValue (min, max, value) {
         return value < min ? min : (value > max ? max : value)
     }
 
-    const divStyle = {backgroundColor: `rgb(${r(0, 255, props.r)}, ${r(0, 255, props.g)}, ${r(0, 255, props.b)})`};
+    const divStyle = {backgroundColor: `rgb(${rgbValue(0, 255, props.r)}, ${rgbValue(0, 255, props.g)}, ${rgbValue(0, 255, props.b)})`};
     
     return (
 
-        <div style={divStyle}>
-            rgb({r(0, 255, props.r)}, {r(0, 255, props.g)},{r(0, 255, props.b)})
+        <div style={divStyle} className="box-color">
+            <p className="p-box-color">rgb({rgbValue(0, 255, props.r)}, {rgbValue(0, 255, props.g)},{rgbValue(0, 255, props.b)})</p>
         </div>
     )
 }

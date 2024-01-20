@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 function IdCard (props) {
     return (
-        <div>
-            <div>
+        <div className="id-card">
+            <div className="id-img">
                 <img src={props.picture} alt="profile" />
             </div>
-            <div>
+            <div className="id-text">
                 <p><b>First Name:</b>{props.firstName}</p>
                 <p><b>Last Name:</b>{props.lastName}</p>
                 <p><b>Gender:</b>{props.gender}</p>

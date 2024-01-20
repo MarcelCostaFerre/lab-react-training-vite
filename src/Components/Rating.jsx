@@ -35,22 +35,23 @@ function Rating (props) {
     function stars() {
         switch (result()) {
             case 0:
-                return starsZero
+                return '☆☆☆☆☆'
             case 1:
-                return starsOne
+                return '★☆☆☆☆'
             case 2:
-                return starsTwo
+                return '★★☆☆☆'
             case 3:
-                return starsThree
+                return '★★★☆☆'
             case 4:
-                return starsFour
+                return '★★★★☆'
             case 5:
-                return starsFive
+                return '★★★★★'
         }
     }
 
     return (
-        <img src={stars()} alt='Rating stars' />
+        // <img src={stars()} alt='Rating stars' />
+        <p className='stars'>{stars()}</p>
     )
 }
 
