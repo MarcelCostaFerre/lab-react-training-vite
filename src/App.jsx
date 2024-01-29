@@ -1,4 +1,6 @@
 import "./App.css";
+import profileImg from "./assets/images/Profile-Image.jpg";
+import profileImgGlasses from "./assets/images/Profile-Image-Glasses.png";
 import IdCard from "./Components/IdCard";
 import Greetings from "./Components/Greetings";
 import Random from "./Components/Random";
@@ -6,6 +8,15 @@ import BoxColor from "./Components/BoxColor";
 import CreditCard from "./Components/CreditCard";
 import Rating from "./Components/Rating";
 import DriverCard from "./Components/DriverCard";
+import LikeButton from "./Components/LikeButton";
+import ClickablePicture from "./Components/ClickablePicture";
+import Dice from "./Components/Dice";
+import Carousel from "./Components/Carousel";
+import NumbersTable from "./Components/NumbersTable";
+import FaceBook from "./Components/FaceBook";
+import SignupPage from "./Components/SignupPage";
+import SingleColorPicker from "./Components/SingleColorPicker";
+import RGBColorPicker from "./Components/RGBColorPicker";
 
 function App() {
   return (
@@ -127,6 +138,57 @@ function App() {
             licensePlate: "BE33ER",
           }}
         />
+      </div>
+      <br />
+      <h2>Iteration 8 | State: LikeButton</h2>
+      <div>
+        <LikeButton /> <LikeButton />
+      </div>
+      <br />
+      <h2>Iteration 9: State: ClickablePicture</h2>
+      <div>
+        <ClickablePicture img={profileImg} imgClicked={profileImgGlasses} />
+      </div>
+      <br />
+      <h2>Iteration 10 | State: Dice</h2>
+      <div>
+        <Dice />
+      </div>
+      <br />
+      <h2>Iteration 11 | State: Carousel</h2>
+      <div>
+        <Carousel
+          images={[
+            "https://randomuser.me/api/portraits/women/1.jpg",
+            "https://randomuser.me/api/portraits/men/1.jpg",
+            "https://randomuser.me/api/portraits/women/2.jpg",
+            "https://randomuser.me/api/portraits/men/2.jpg",
+          ]}
+        />
+      </div>
+      <br />
+      <h2>Iteration 12 | List and Keys | NumbersTable</h2>
+      <div>
+        <NumbersTable limit={12} />
+        <br/>
+        <NumbersTable limit={9} />
+      </div>
+      <br />
+      <h2>Iteration 13 | List and Keys - FaceBook (Simple)</h2>
+      <h2>&</h2>
+      <h2>Iteration 14 | List and Keys - FaceBook (Advanced)</h2>
+      <div>
+        <FaceBook />
+      </div>
+      <br />
+      <h2>Iteration 15 | Form - SignupPage</h2>
+      <div>
+        <SignupPage />
+      </div>
+      <br />
+      <h2>Iteration 16 | Lifting State Up - RGBColorPicker</h2>
+      <div>
+        {/* <RGBColorPicker /> */}
       </div>
     </div>
   );

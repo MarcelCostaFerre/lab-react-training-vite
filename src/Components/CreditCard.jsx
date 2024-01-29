@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import logoVisa from "../assets/images/visa.png";
 import logoMc from "../assets/images/master-card.svg";
 
@@ -6,7 +7,6 @@ function CreditCard(props) {
     color: props.color,
     backgroundColor: props.bgColor,
     width: "20%",
-    // padding: '2rem',
     borderRadius: "10px",
   };
 

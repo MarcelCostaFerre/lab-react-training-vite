@@ -1,15 +1,6 @@
-import blueStarZero from "../assets/images/0blueStars.png";
-import blueStarOne from "../assets/images/1blueStars.png";
-import blueStarTwo from "../assets/images/2blueStars.png";
-import blueStarThree from "../assets/images/3blueStars.png";
-import blueStarFour from "../assets/images/4blueStars.png";
-import blueStarFive from "../assets/images/5blueStars.png";
-
+/* eslint-disable react/prop-types */
 function DriverCard(props) {
-  const bgBlueStyle = {
-    color: "white",
-    backgroundColor: "#e6e6e6",
-  };
+ 
   const car = {
     model: props.car.model,
     licensePlate: props.car.licensePlate,
@@ -42,11 +33,6 @@ function DriverCard(props) {
     }
   }
 
-  //     return (
-  //         <img src={stars()} alt='Rating stars' />
-  //     )
-  // }
-
   return (
     <div className="driver-car">
       <div>
@@ -58,7 +44,6 @@ function DriverCard(props) {
       </div>
       <div className="driverCard-text">
         <h2>{props.name}</h2>
-        {/* <img src={blueStars()} alt='Rating stars' /> */}
         <p className="blue-stars">{blueStars()}</p>
         <p>
           {car.model} - {car.licensePlate}
