@@ -170,7 +170,7 @@ function App() {
       <div>
         <NumbersTable limit={12} />
         <br/>
-        <NumbersTable limit={9} />
+        <NumbersTable limit={5} />
       </div>
       <br />
       <h2>Iteration 13 | List and Keys - FaceBook (Simple)</h2>
