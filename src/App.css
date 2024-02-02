@@ -146,12 +146,6 @@ button:hover {
   width: 10rem;
 }
 
-.single-color{
-  width: 5rem;
-  height: 5rem;
-  border: black 2px solid;
-}
-
 .white-number {
   background-color: white;
   display: flex;
@@ -180,4 +174,17 @@ button:hover {
   flex-wrap: wrap;
   width: 30%;
   margin: 0;
+}
+
+.color{
+  width: 5rem;
+  height: 5rem;
+  border: black 4px solid;
+  margin: 0 0.5rem 0 3rem;
+}
+
+.single-color{
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SingleColorPicker from "./SingleColorPicker";
 
 function RGBColorPicker() {
   const [rValue, setRValue] = useState(0);
@@ -14,26 +15,39 @@ function RGBColorPicker() {
       <SingleColorPicker
         color="r"
         value={rValue}
-        onChange={() => {
-          /* ... */
+        onChange={(value) => {
+          if(value>=0 && value<=255){
+            setRValue(value)}else{
+                    alert('Choose a number between 0 and 255')}
         }}
       />
 
       <SingleColorPicker
         color="g"
         value={gValue}
-        onChange={() => {
-          /* ... */
+        onChange={(value) => {
+          if(value>=0 && value<=255){
+            setGValue(value)}else{
+                    alert('Choose a number between 0 and 255')}
         }}
       />
 
       <SingleColorPicker
         color="b"
         value={bValue}
-        onChange={() => {
-          /* ... */
+        onChange={(value) => {
+          if(value>=0 && value<=255){
+            setBValue(value)}else{
+                    alert('Choose a number between 0 and 255')}
         }}
       />
+      <div className="single-color">
+        <div
+          className="color"
+          style={{ backgroundColor: `rgb(${rValue}, ${gValue}, ${bValue})` }}
+        ></div>
+        <h2>{`rgb(rgb(${rValue}, ${gValue}, ${bValue})`}:</h2>
+      </div>
     </div>
   );
 }

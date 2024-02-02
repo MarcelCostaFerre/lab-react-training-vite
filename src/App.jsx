@@ -15,7 +15,6 @@ import Carousel from "./Components/Carousel";
 import NumbersTable from "./Components/NumbersTable";
 import FaceBook from "./Components/FaceBook";
 import SignupPage from "./Components/SignupPage";
-import SingleColorPicker from "./Components/SingleColorPicker";
 import RGBColorPicker from "./Components/RGBColorPicker";
 
 function App() {
@@ -188,7 +187,7 @@ function App() {
       <br />
       <h2>Iteration 16 | Lifting State Up - RGBColorPicker</h2>
       <div>
-        {/* <RGBColorPicker /> */}
+        <RGBColorPicker />
       </div>
     </div>
   );
